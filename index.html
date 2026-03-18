@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mans datorikas portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="mansStils.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button">Sākums</a>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Attēlu apstrāde</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika</a>
+                <a href="#vektora" class="w3-bar-item w3-button">Vektorgrafika</a>
+            </div>
+        </div>
+
+        <a href="#teksts" class="w3-bar-item w3-button">Teksta apstrāde</a>
+        <a href="#izklajlapa" class="w3-bar-item w3-button">Izklājlapas</a>
+        <a href="#video" class="w3-bar-item w3-button">Video</a>
+        <a href="otrais.html" class="w3-bar-item w3-button">Individuālā tēma</a>
+    </div>
+
+    <main>
+        <div class="karte">
+            <h1>Mans datorikas portfolio</h1>
+            <p class="teksta-bloks">
+                Šajā mājaslapā es vienkārši parādu dažus darbus, ko esmu taisījis datorikā.
+                Te ir teksta apstrāde, attēlu apstrāde, 3D modelēšana, video un izklājlapas.
+            </p>
+        </div>
+
+        <div class="karte sadalas" id="teksts">
+            <h2>Teksta apstrāde</h2>
+            <p class="teksta-bloks">
+                Teksta apstrādē es mācījos rakstīt un noformēt tekstu. Es mācījos veidot virsrakstus,
+                sarakstus, vienkāršas tabulas un sakārtot informāciju tā, lai to būtu viegli lasīt.
+                Man patika, ka tekstu var padarīt daudz saprotamāku, ja viss ir sakārtots.
+            </p>
+            <ul>
+                <li>virsraksti un rindkopas</li>
+                <li>saraksti</li>
+                <li>teksta izlīdzināšana</li>
+                <li>vienkārša noformēšana</li>
+            </ul>
+        </div>
+
+        <div class="karte sadalas" id="rastra">
+            <h2>Attēlu apstrāde - rastra grafika</h2>
+            <p>Šeit ir mana gif animācija.</p>
+            <img src="images/shutterstock_641960737.gif" alt="Gif animācija" class="attels small-img">
+        </div>
+
+        <div class="karte sadalas" id="vektora">
+            <h2>Attēlu apstrāde - vektorgrafika</h2>
+            <p>Šeit ir mans vienkāršais logo.</p>
+            <img src="images/Capture.PNG" alt="Logo" class="attels small-img">
+        </div>
+
+        <div class="karte sadalas" id="modelis">
+            <h2>3D modelēšana</h2>
+            <p>Šeit ir mans 3D kuba darbs.</p>
+            <img src="images/kubs.png" alt="3D kubs" class="attels small-img">
+        </div>
+
+        <div class="karte sadalas" id="video">
+            <h2>Video</h2>
+            <p>Šeit ir vienkāršs reklāmas video suvenīram.</p>
+            <video style="width: 700px;" controls>
+                <source src="video/karlisloh.mp4" type="video/mp4">
+                Jūsu pārlūks neatbalsta video.
+            </video>
+        </div>
+
+        <div class="karte sadalas" id="izklajlapa">
+            <h2>Izklājlapas</h2>
+            <p>
+                Te ir saite uz lejupielādējamu xlsx failu ar vienkāršiem aprēķiniem:
+                <a href="files/excelKD2026.xlsx" download>Lejupielādēt xlsx failu</a>
+            </p>
+        </div>
+
+        <div class="karte">
+            <h2>Ārējās saites un informācijas avoti</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://netbeans.apache.org/" target="_blank">Apache NetBeans</a></li>
+                <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+            </ul>
+        </div>
+
+        <div class="karte">
+            <h2>Papildu lapas</h2>
+            <p>Šeit ir saites uz pārējām lapām.</p>
+            <a class="poga" href="forma.html">Forma</a>
+            <a class="poga" href="dzerdaudz.html">Dzērienu izvēle</a>
+            <a class="poga" href="dzer.html">Dzēriena lapa</a>
+        </div>
+    </main>
+
+    <footer>
+        Vienkārša portfolio lapa datorikas darbam
+    </footer>
+</body>
+</html>

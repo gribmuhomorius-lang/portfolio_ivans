@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="mansStils.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="karte calc-box">
+            <h1>Forma ar kalkulatoru</h1>
+            <p>Ievadi divus skaitļus un izvēlies darbību.</p>
+
+            <label>Pirmais skaitlis</label><br>
+            <input type="number" id="sk1"><br>
+
+            <label>Otrais skaitlis</label><br>
+            <input type="number" id="sk2"><br>
+
+            <label>Darbība</label><br>
+            <select id="darbiba">
+                <option value="+">Saskaitīšana</option>
+                <option value="-">Atņemšana</option>
+                <option value="*">Reizināšana</option>
+                <option value="/">Dalīšana</option>
+            </select>
+            <br><br>
+
+            <button onclick="rekini()">Aprēķināt</button>
+            <button onclick="atiestatitKalkulatoru()">Reset</button>
+
+            <p id="rezultats">Rezultāts: </p>
+
+            <a class="poga" href="index.html">Atpakaļ uz sākumu</a>
+        </div>
+    </main>
+</body>
+</html>

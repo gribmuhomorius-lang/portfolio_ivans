@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.72), rgba(10, 10, 10, 0.72)), url("images/fons.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f2f2f2;
+}
+
+/* Keep the navigation bar always visible on top */
+.w3-bar.w3-black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* 56px top offset for fixed navbar */
+    padding: 56px 18px 18px;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+a {
+    color: #9fd3ff;
+}
+
+.karte {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+
+.attels, video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.small-img {
+    max-width: 280px;
+}
+
+.calc-box input {
+    width: 90px;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+.calc-box button,
+.poga,
+.choice button {
+    margin: 6px 4px 6px 0;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #3e7cb1;
+    color: white;
+    cursor: pointer;
+}
+
+.choice {
+    background: rgba(255,255,255,0.07);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #dddddd;
+}
+
+.tabula {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabula td, .tabula th {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.w3-bar .w3-button {
+    font-weight: bold;
+}
+
+.teksta-bloks {
+    line-height: 1.6;
+}

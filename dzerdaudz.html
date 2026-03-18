@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzērienu izvēle</title>
+    <link rel="stylesheet" href="mansStils.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="karte">
+            <h1>Izvēlies dzērienu</h1>
+
+            <div class="choice">
+                <strong>Kafija</strong> - 1.00 €
+                <button onclick="izveletiesDzerienu('Ūdens', '1.00')">Izvēlēties</button>
+            </div>
+
+            <div class="choice">
+                <strong>Sula</strong> - 1.80 €
+                <button onclick="izveletiesDzerienu('Sula', '1.80')">Izvēlēties</button>
+            </div>
+
+            <div class="choice">
+                <strong>Kakao</strong> - 2.20 €
+                <button onclick="izveletiesDzerienu('Limonāde', '2.20')">Izvēlēties</button>
+            </div>
+
+            <div class="choice">
+                <strong>Tēja</strong> - 1.50 €
+                <button onclick="izveletiesDzerienu('Tēja', '1.50')">Izvēlēties</button>
+            </div>
+
+            <p id="izvele">Tu izvēlējies: </p>
+
+            <a class="poga" href="index.html">Atpakaļ uz sākumu</a>
+        </div>
+    </main>
+</body>
+</html>
