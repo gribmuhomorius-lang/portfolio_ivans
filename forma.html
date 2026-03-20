@@ -3,37 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma</title>
+    <title>Formas</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="mansStils.css">
-    <script src="js/script.js" defer></script>
 </head>
 <body>
+    <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button">Sākums</a>
+
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Attēlu apstrāde</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika</a>
+                <a href="#vektora" class="w3-bar-item w3-button">Vektorgrafika</a>
+            </div>
+        </div>
+
+        <a href="#teksts" class="w3-bar-item w3-button">Teksta apstrāde</a>
+        <a href="#izklajlapa" class="w3-bar-item w3-button">Izklājlapas</a>
+        <a href="#video" class="w3-bar-item w3-button">Video</a>
+        <a href="otrais.html" class="w3-bar-item w3-button">Individuālā tēma</a>
+    </div>
     <main>
         <div class="karte calc-box">
-            <h1>Forma ar kalkulatoru</h1>
-            <p>Ievadi divus skaitļus un izvēlies darbību.</p>
+            <h1>Formas</h1>
+            <p>Datuma un aprēķinu formas.</p>
 
-            <label>Pirmais skaitlis</label><br>
-            <input type="number" id="sk1"><br>
+            <h2>Datuma forma</h2>
+            <form>
+                <p>
+                    Šodienas datums
+                    <input type="text" name="datums" style="width: 220px;">
+                </p>
+                <p>
+                    Ja gribi uzzināt šodienas datumu, spied pogu DATUMS
+                    <input type="button" value="DATUMS" onclick="datums.value=new Date()">
+                </p>
+                <p>
+                    Ja gribi izdzēst datuma lodziņa saturu, spied pogu NOTĪRĪT
+                    <input type="reset" value="NOTĪRĪT">
+                </p>
+            </form>
+        </div>
 
-            <label>Otrais skaitlis</label><br>
-            <input type="number" id="sk2"><br>
-
-            <label>Darbība</label><br>
-            <select id="darbiba">
-                <option value="+">Saskaitīšana</option>
-                <option value="-">Atņemšana</option>
-                <option value="*">Reizināšana</option>
-                <option value="/">Dalīšana</option>
-            </select>
-            <br><br>
-
-            <button onclick="rekini()">Aprēķināt</button>
-            <button onclick="atiestatitKalkulatoru()">Reset</button>
-
-            <p id="rezultats">Rezultāts: </p>
-
-            <a class="poga" href="index.html">Atpakaļ uz sākumu</a>
+        <div class="karte calc-box">
+            <h2>Aprēķinu forma</h2>
+            <form>
+                <p>
+                    1. skaitlis
+                    <input type="text" name="sk1">
+                </p>
+                <p>
+                    2. skaitlis
+                    <input type="text" name="sk2">
+                </p>
+                <p>
+                    <input type="button" value="+" onclick="rez.value=Number(sk1.value)+Number(sk2.value)">
+                    <input type="button" value="-" onclick="rez.value=Number(sk1.value)-Number(sk2.value)">
+                    <input type="button" value="X" onclick="rez.value=Number(sk1.value)*Number(sk2.value)">
+                    <input type="button" value=":" onclick="rez.value=Number(sk1.value)/Number(sk2.value)">
+                    <input type="reset" value="NOTĪRĪT">
+                </p>
+                <hr>
+                <p>
+                    Rezultāts
+                    <input type="text" name="rez">
+                </p>
+            </form>
         </div>
     </main>
 </body>
