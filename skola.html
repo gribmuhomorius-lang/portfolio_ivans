@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;    
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>    
+</head>
+<body>
+
+<header>
+  <h2>Rīgas Valsts 1. ģimnāzija.</h2>
+</header>
+
+<section>
+  <nav>
+      <h3>Satura rādītājs</h3>
+    <ol>
+      <li><a href="#Vēsture">Vēsture</a></li>
+      <li><a href="#Skolas nosaukumu maiņa">Skolas nosaukumu maiņa</a></li>
+      <li><a href="#Zināmie skolas vadītāji (1229—1804)">Zināmie skolas vadītāji (1229—1804)</a></li>
+      <li><a href="Skolas absolventi #">Skolas absolventi</a></li>
+    </ol>
+  </nav>
+  
+  <article>
+        <h1>Skolas nosaukumu maiņa</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <ul>
+        <li>1211.—1528. — Domkapitula klostera skola</li>
+        <li>1528.—1631. — Rīgas pilsētas Domskola</li>
+        <li>1631.—1710. — Rīgas Akadēmiskā ģimnāzija</li>
+        <li>1711.—1804. — Rīgas Domskola (klasiskā ģimnāzija)</li>
+        <li>1804.—1860. — Rīgas 1. apriņķa skola</li>
+        <li>1861.—1873. — Rīgas Reālģimnāzija</li>
+        <li>1873.—1894. — Rīgas Pilsētas ģimnāzija ar reālskolas un ģimnāzijas klasēm</li>
+        <li>1894.—1895. — 8 klašu klasiskā ģimnāzija</li>
+        <li>1896.—1919. — Valsts ģimnāzija</li>   
+        <li>1919.—1920. — 1. vidusskola</li>
+        <li>1920.—1940. — Rīgas pilsētas 1. ģimnāzija</li>
+        <li>1940.—1944. — Rīgas 1. vidusskola</li>
+        <li>1944.—1990. — Ar Darba Sarkanā Karoga ordeni apbalvotā Rīgas L. Paegles 1. vidusskola</li>
+        <li>1990.—1996. — Rīgas 1. ģimnāzija</li>
+        <li>1996.—pašlaik — Rīgas Valsts 1. ģimnāzija</li>  
+    </ul>
+  </section>
+  </article>
+</section>
+<br>
+ <section id="vaditaji">
+    <article>
+<h2>Zināmie skolas vadītāji</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+ <tr>
+    <th>Laiks</th>
+    <th>Amats un vārds</th>
+  </tr>
+  <tr>
+    <td>ap 1239.</td>
+    <td>mācību pārzinis (scholasticus) Domkapitula kanoniķis Heinrihs</td>
+  </tr>
+  <tr>
+    <td>1528.—1538.</td>
+    <td>rektors Jakobs Batuss (Jacobus Battus, miris 1546)</td>
+  </tr>
+  <tr>
+    <td>no 1538.</td>
+    <td>rektors Retgers Pistorijs (Bekers)</td>
+  </tr>
+  <tr>
+    <td>1554.—1561.</td>
+    <td>rektors Hermanis Vilkens (Vilikinds, Vitekinds)</td>
+  </tr>
+  <tr>
+    <td>ap 1576.</td>
+    <td>rektors Georgs Marsovs</td>
+  </tr>
+  <tr>
+    <td>1579.—1589.</td>
+    <td>rektors Heinrihs Mellers</td>
+  </tr>
+  <tr>
+    <td>1589.—1596.</td>
+    <td>rektors un inspektors Johans Rīvijs</td>
+  </tr>
+  <tr>
+    <td>no 1631.</td>
+    <td>ģimnāzijas inspektors Hermanis Samsons</td>
+  </tr>
+  <tr>
+    <td>no 1669.</td>
+    <td>rektors Georgs Lauterbahs</td>
+  </tr>
+  <tr>
+    <td>no 1681.</td>
+    <td>rektors Mihaels Pinsderfers (Pinsdörffer)</td>
+  </tr>
+  <tr>
+    <td>1755.—1765.</td>
+    <td>rektors un inspektors Johans Gothelfs Lindners</td>
+  </tr>
+  <tr>
+    <td>1765.—1780.</td>
+    <td>rektors Gotlībs Šlēgels</td>
+  </tr>
+  <tr>
+    <td>1780.—1787.</td>
+    <td>rektors Karls Filips Mihaels Snells</td>
+  </tr>
+  <tr>
+    <td>no 1788.</td>
+    <td>rektors Kārlis Gotlobs Zontāgs</td>
+  </tr>
+  <tr>
+    <td>līdz 1804.</td>
+    <td>rektors Johans Augusts Albanuss</td>
+  </tr>
+  </table>
+  </article>
+</section>
+<br>
+ <section id="absolventi">
+     <h2>Skolas absolventi</h2>
+     <p>Tomass Dukurs, Valters Frīdenbergs, Toms Skujiņš, Daina Taimiņa</p>
+     <h3>Rainis</h3>
+     <p>Rainis (īstajā vārdā Jānis Pliekšāns; 1865–1929) – dzejnieks, dramaturgs, tulkotājs, žurnālists, filozofs, kultūras darbinieks, politiķis.</p>
+     <p>avots:<a href ="https://www.literatura.lv/personas/rainis"></p>
+<footer>
+    <a href ="https://www.r1g.edu.lv/">
+    <img scr="image/logo.png" alt=logo" > 
+        </a>    
+</footer>
+</body>             
+</html>
+
